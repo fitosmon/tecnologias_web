@@ -22,12 +22,20 @@
      <h2>Pregunta 2:</h2>
     <p>Proporcionar los valores de $a, $b, $c como sigue:</p>
     <?php
-    $a = “ManejadorSQL”;
+    $a = "ManejadorSQL";
     $b = 'MySQL';
     $c = &$a;
-    echo $a;
-    echo $b;
-    echo $c;
+    echo "<p>$a</p>" ;
+    echo "<p>$b</p>" ;
+    echo "<p>$c</p>" ;
+
+    $a = "PHP server";
+    $b = &$a;
+    echo "<p>$a</p>" ;
+    echo "<p>$b</p>" ;
     ?>
+    <p>El valor de la variable se actualizo en el momento de volver a asignarle nuevo valor a ambas</p>
+
+    <h2>Tercera pregunta</h2>
 </body>
 </html>
