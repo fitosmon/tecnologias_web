@@ -37,5 +37,22 @@
     <p>El valor de la variable se actualizo en el momento de volver a asignarle nuevo valor a ambas</p>
 
     <h2>Tercera pregunta</h2>
+    <p>Mostrar contenido despues de cada asignacion</p>
+    <?php
+    $a = "PHP5";
+    echo "<p>$a</p>";
+    $z[] = &$a;
+    echo "<p>$z[0]</p>";
+    $b = "5a version de PHP";
+    echo "<p>$b</p>";
+    $c = $b*10;
+    echo "<p>$c</p>";
+    $a .= $b;
+    echo "<p>$a</p>";
+    $b *= $c;
+    echo "<p>$b</p>";
+    $z[0] = "MySQL";
+    echo "<p>$z[0]</p>";
+    ?>
 </body>
 </html>
