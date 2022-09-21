@@ -7,11 +7,34 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button, input, select, textarea{
+input{
     font-family: inherit;
     font-size: 100%;
     width: 150px;
     padding: 2px;
     margin: 0;
     box-sizing: border-box;
+}
+
+img{
+    max-height: 100%;
+    object-fit: contain;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado{
+    height: 100px;
+    justify-content: center;
 }
