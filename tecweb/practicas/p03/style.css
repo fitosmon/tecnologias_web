@@ -46,6 +46,16 @@ footer{
     padding-bottom: 20px;
 }
 
+a{
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .encabezado{
     height: 100px;
     justify-content: center;
