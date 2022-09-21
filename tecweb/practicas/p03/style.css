@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+    max-width: 100vw;
+    color: #857D7A;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    width: 150px;
+    padding: 2px;
+    margin: 0;
+    box-sizing: border-box;
+}
