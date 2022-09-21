@@ -1,6 +1,6 @@
 body{
     background-color: white;
-    max-width: 100vw;
+    max-width: 80vw;
     color: #857D7A;
     padding: 0;
     margin: 0;
@@ -10,7 +10,7 @@ body{
 input{
     font-family: inherit;
     font-size: 100%;
-    width: 150px;
+    width: 50px;
     padding: 2px;
     margin: 0;
     box-sizing: border-box;
@@ -28,13 +28,76 @@ ul{
 }
 
 header{
-    width: 100vw;
-    height: 300px;
+    width: 50vw;
+    height: 150px;
     display: flex;
     justify-content: space-between;
+}
+
+main{
+    max-width: 80vw;
+    display: flex;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 .encabezado{
     height: 100px;
     justify-content: center;
+}
+
+.lateral{
+    width: 300px;
+}
+
+
+
+label{
+    display: inline-block;
+    text-align: right;
+    width: 90px;
+    padding-right: 5px;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #32A9D9;
+}
+
+.producto{
+    margin: auto;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 400px;
+    width: 330px;
+    color: whitesmoke;
+}
+
+.paquetes>article{
+    border: solid #32A9D9 10px;
+    background-color: white;
+    padding: 10px;    
+
+    border-radius: 5%;
+}
+
+footer ul{
+    margin-top: 10px;
+}
+
+footer ul li{
+    margin-top: 5px;
 }
