@@ -9,6 +9,10 @@
       ol { 
       list-style-type: none;
       }
+      td{
+        border: 1px solid;
+      }
+
     </style>
 </head>
 <body>
@@ -51,25 +55,28 @@
         <p>
             R:
             <?php
-            // AQUÍ VA EL CÓDIGO DE SOLUCIÓN
+                if (!empty($_GET['factor'])) {
+                    $factor = $_GET['factor'];
+                    echo multiplo($factor);
+                } else {
+                    echo '(vacío)';
+                }
             ?>
         </p>
     </div>
     <hr>
     <div>
         <h3>Ejercicio 4</h3>
-        <p>Crear un arreglo cuyos <strong>índices</strong> van de 97 a 122 y cuyos <strong>valores</strong> son las letras de la 'a' a la 'z'. Usa la función <strong>chr(n)</strong> que devuelve el caracter cuyo código ASCII es <strong>n</strong> para poner el valor en cada índice. Es decir:</p>
+        <p>Usar las variables $edad y $sexo en una instrucción if para identificar una persona de
+sexo “femenino”, cuya edad oscile entre los 18 y 35 años y mostrar un mensaje de
+bienvenida apropiado. Por ejemplo:</p>
         <p>
-            [97] => a <br>
-            [98] => b <br>
-            [99] => c <br>
-            … <br>
-            [122] => z
+        Bienvenida, usted está en el rango de edad permitido.
         </p>
         <p>
             R:
             <?php
-            // AQUÍ VA EL CÓDIGO DE SOLUCIÓN
+            echo hacerTabla();
             ?>
         </p>
     </div>
