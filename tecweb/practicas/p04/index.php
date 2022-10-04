@@ -40,7 +40,7 @@
         <p>
             R:
             <?php
-            // AQUÍ VA EL CÓDIGO DE SOLUCIÓN
+            echo tablaParImpar();
             ?>
         </p>
     </div>
