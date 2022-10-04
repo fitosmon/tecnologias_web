@@ -26,6 +26,9 @@
                 echo '<p>Edad: '.$age.'<br>';
                 echo 'Sexo: '.$sex.'</p>';
             }
+			if (18<$age && $age<35 && $sex == "femenino"){
+				echo "Bienvenida, usted esta en el rango de edad permitido";
+			}
         ?>
 	</body>
 </html>
