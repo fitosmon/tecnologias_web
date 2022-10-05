@@ -114,6 +114,20 @@
             </p>
             </form>
         </p>
+        <div>
+        <form id="formulario2" action="./src/script2.php" method="post">
+            <fieldset>
+                <legend>Buscador vehicular</legend>
+                <ol>
+                <li><label>Matricula:</label> <input type="text" name="matricula"></li>
+                <li><label>Mostrar todo</label> <input type="checkbox" name="mostrar" value="mostrar"></li>
+                </ol>
+            </fieldset>
+            <p>
+                <input type="submit" value="¡OK!">
+            </p>
+            </form>
+        </div>
     </div>
 </body>
 </html>
