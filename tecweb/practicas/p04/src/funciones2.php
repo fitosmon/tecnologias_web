@@ -36,7 +36,7 @@
         global $carros_db;
         foreach ($carros_db as $key => $value){
             if ($matricula==$key){
-                print "<p>Registro encontrado";
+                print "<p>Registro $matricula encontrado: ";
                 print_r($value);
                 print "</p>";
             }

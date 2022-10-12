@@ -20,11 +20,11 @@
 		<?php
             require_once __DIR__.'/funciones2.php';
             $matricula = $_POST['matricula'];
-            $mostrar = $_POST['mostrar'];
             if (!empty($matricula)) {
                 buscarAuto($matricula);
             }
-            if (!empty($mostrar)){
+            if (!empty($_POST['mostrar'])){
+				$mostrar = $_POST['mostrar'];
                 mostrarTodo();
             }
         ?>
