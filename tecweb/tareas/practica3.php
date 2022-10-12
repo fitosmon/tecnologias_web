@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 2</title>
 </head>
 <body>
@@ -61,9 +59,9 @@
 
         $z[0] = "MySQL";
 
-        echo "<pre><div>";
+        echo "<div>";
         print_r($z);
-        echo "</div></pre>";
+        echo "</div>";
 
         echo "<h2>Cuarta pregunta</h2>
             <p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
@@ -98,9 +96,9 @@
 
             echo "<h2>Sexta pregunta</h2>
             <p>Dar y comprobar el valor booleano de las variables $ a, $ b, $ c, $ d, $ e y $ f y muéstralas
-            usando la función var_dump(< datos >).
+            usando la función var_dump(' datos ').
             </p>
-            </p>
+            <p>
             Después investiga una función de PHP que permita transformar el valor booleano de $ c y $ e
             en uno que se pueda mostrar con un echo:
             </p>";
@@ -132,6 +130,9 @@
             echo "<p>Impreso mediante la funcion la variable c: $text</p>";
         ?>
     </div>
-
+    <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+  </p>
 </body>
 </html>
