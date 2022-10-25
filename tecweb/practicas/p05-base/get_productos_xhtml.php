@@ -61,9 +61,21 @@
 	</head>
 	<body>
 		<h3>PRODUCTO</h3>
-		<?php
-			echo json_encode($data, JSON_PRETTY_PRINT);
+		<div>
+			<table>
+
+				<?php
+
+		foreach ($data as $producto => $registro){
+			echo "<tr>";
+			foreach($registro as $key => $value ){
+				echo "<td>".utf8_encode($key)."</td><td>".utf8_encode($value)."</td>";
+			}	
+			echo "</tr>";
+		}
 		?>
+		</table>
+		</div>
 
 		</body>
 </html>
