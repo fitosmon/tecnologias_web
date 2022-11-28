@@ -82,7 +82,7 @@
 					foreach($registro as $key => $value ){
 						echo "<td>".$value."</td>";
 					}	
-					echo "<td><button >Modificar</button></td>";
+					echo "<td><button onclick='getInfo()' >Modificar</button></td>";
 					echo "</tr>";
 
 				}
@@ -95,55 +95,39 @@
 
 <script>
 function getInfo(){
-// se obtiene el id de la fila donde está el botón presinado
+
 var rowId = event.target.parentNode.parentNode.id;
 
-// se obtienen los datos de la fila en forma de arreglo
 var data = document.getElementById(rowId).childNodes;
-/**
-querySelectorAll() devuelve una lista de elementos (NodeList) que 
-coinciden con el grupo de selectores CSS indicados.
-(ver: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
-En este caso se obtienen todos los datos de la fila con el id encontrado
-y que pertenecen a la clase "row-data".
-*/
+var id = data[0].innerHTML;
+var nombre = data[1].innerHTML;
+var marca  = data[2].innerHTML;
+var modelo  = data[3].innerHTML;
+var precio  =data[4].innerHTML;
+var detalles =  data[5].innerHTML;
+var unidades = data[6].innerHTML;
+var imagen = data[7].innerHTML;
 
-var name = data[0].innerHTML;
-var age = data[1].innerHTML;
 
-alert("Name: " + name + "\nAge: " + age);
+alert("ID: " + id + "\nNombre: " + nombre + "\nMarca: " + marca + "\nModelo: " + modelo + "\nPrecio: " + precio + "\nDetalles: " + detalles + "\nUnidades: " + unidades);
 
-send2form(name, age);
+send2form(id, nombre, marca, modelo, precio, detalles, unidades, imagen);
 }
 
-function send2form(name, age) {
 
+function send2form(id, nombre, marca, modelo, precio, detalles, unidades, imagen) {
+	var urlForm = "http://localhost/tecweb/practicas/p07/formulario_productos_v2.php";
+	var propNombre = "nombre="+nombre;
+	var propId= "id="+id;
+	var propMarca = "marca="+marca;
+	var propModelo = "modelo="+modelo;
+	var propPrecio = "precio=" +precio;
+	var propDetalles = "detalles="+detalles;
+	var propUnidades = "unidades="+unidades;
 
-	var form = document.createElement("form");
+	window.open(urlForm+"?"+propNombre+"&"+propId+"&"+propMarca+"&"+propPrecio+"&"+propModelo+"&"+propDetalles+"&"+propUnidades);
 
-	var nombreIn = document.createElement("input");
-	nombreIn.type = 'text';
-	nombreIn.name = 'nombre';
-	nombreIn.value = name;
-	form.appendChild(nombreIn);
-
-	var edadIn = document.createElement("input");
-	edadIn.type = 'text';
-	edadIn.name = 'edad';
-	edadIn.value = age;
-	form.appendChild(edadIn);
-
-	console.log(form);
-
-	form.method = 'POST';
-	form.action = 'http://localhost/tecweb/practicas/p07/formulario.php';  
-
-	document.body.appendChild(form);
-	form.submit();
-
-
+}
 </script>
-<!-- 
-	 onclick='modificar()'
- -->
+
